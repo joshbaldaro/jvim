@@ -14,6 +14,9 @@ require('lazy').setup({
     require 'plugins.colortheme',
     require 'plugins.neotree',
     
+    require 'plugins.utils.gitsigns',
+    require 'plugins.utils.fugitive',
+
     require 'plugins.ui.bufferline',
     require 'plugins.ui.snacks',
     require 'plugins.ui.whichkey',
