@@ -20,6 +20,7 @@ require('lazy').setup({
     require 'plugins.ui.bufferline',
     require 'plugins.ui.snacks',
     require 'plugins.ui.whichkey',
+    require 'plugins.ui.lualine',
     
     require 'plugins.editor.todo',
 })
