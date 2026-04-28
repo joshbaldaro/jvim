@@ -10,6 +10,7 @@ return {
             {
                 mode = { 'n', 'x' },
                 { '<leader>t', group = 'terminal' },
+                { '<leader>g', group = 'git' },
             },
         },
     },

@@ -7,7 +7,7 @@ local opts = { noremap = true, silent = true }
 
 vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', opts)
 
-vim.keymap.set('n', '<leader>e', ':Neotree<CR>', opts)
+vim.keymap.set('n', '<leader>e', ':Neotree<CR>', { desc = 'Open File Explorer', noremap = true, silent = true })
 
 local Snacks = require('snacks')
 
@@ -26,9 +26,9 @@ vim.keymap.set('n', '<leader>x', ':Bdelete!<CR>', opts)
 vim.keymap.set('n', '<leader>b', '<cmd> enew <CR>', opts)
 
 -- Create / Close Splits
-vim.keymap.set('n', '<leader>v', '<C-w>v', opts)
-vim.keymap.set('n', '<leader>h', '<C-w>s', opts)
-vim.keymap.set('n', '<leader>xs', ':close<CR>', opts)
+vim.keymap.set('n', '<leader>v', '<C-w>v', { desc = 'Create Vertical Split' })
+vim.keymap.set('n', '<leader>h', '<C-w>s', { desc = 'Create Horizontal Split' })
+vim.keymap.set('n', '<leader>xs', ':close<CR>', { desc = 'Close Split' })
 
 -- Navigate Splits
 vim.keymap.set('n', '<C-h>', ':wincmd h<CR>', opts)
