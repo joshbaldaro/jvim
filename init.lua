@@ -16,6 +16,7 @@ require('lazy').setup({
     
     require 'plugins.utils.gitsigns',
     require 'plugins.utils.fugitive',
+    require 'plugins.utils.lazygit',
 
     require 'plugins.ui.bufferline',
     require 'plugins.ui.snacks',

@@ -78,3 +78,5 @@ vim.keymap.set("n", "<leader>gp", ":Git push<CR>", { desc = "Git push" })
 vim.keymap.set("n", "<leader>gP", ":Git pull<CR>", { desc = "Git pull" })
 vim.keymap.set("n", "<leader>ga", ":Git add %<CR>", { desc = "Git add current file" })
 
+vim.keymap.set("n", "<leader>gl", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
+
