@@ -22,6 +22,7 @@ require('lazy').setup({
     require 'plugins.ui.snacks',
     require 'plugins.ui.whichkey',
     require 'plugins.ui.lualine',
+    require 'plugins.ui.noice',
     
     require 'plugins.editor.treesitter',
     require 'plugins.editor.todo',
