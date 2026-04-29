@@ -27,6 +27,8 @@ require('lazy').setup({
     
     require 'plugins.editor.treesitter',
     require 'plugins.editor.todo',
+
+    require 'plugins.coding.mini-pairs',
 })
 
 require 'core.keymaps'
