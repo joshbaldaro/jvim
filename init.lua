@@ -25,6 +25,8 @@ require('lazy').setup({
     require 'plugins.ui.noice',
     require 'plugins.ui.mini-icons',
     require 'plugins.ui.mini-animate',
+    require 'plugins.ui.mini-indentscope',
+    require 'plugins.ui.smear-cursor',
     
     require 'plugins.editor.treesitter',
     require 'plugins.editor.todo',
