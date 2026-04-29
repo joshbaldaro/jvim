@@ -23,6 +23,7 @@ require('lazy').setup({
     require 'plugins.ui.whichkey',
     require 'plugins.ui.lualine',
     require 'plugins.ui.noice',
+    require 'plugins.ui.mini-icons',
     
     require 'plugins.editor.treesitter',
     require 'plugins.editor.todo',
