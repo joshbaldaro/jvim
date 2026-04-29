@@ -32,6 +32,9 @@ require('lazy').setup({
     require 'plugins.editor.todo',
 
     require 'plugins.coding.mini-pairs',
+    require 'plugins.coding.lsp',
+    require 'plugins.coding.mason',
+    require 'plugins.coding.completions',
 })
 
 require 'core.keymaps'
