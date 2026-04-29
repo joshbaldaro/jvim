@@ -24,6 +24,7 @@ require('lazy').setup({
     require 'plugins.ui.lualine',
     require 'plugins.ui.noice',
     require 'plugins.ui.mini-icons',
+    require 'plugins.ui.mini-animate',
     
     require 'plugins.editor.treesitter',
     require 'plugins.editor.todo',
