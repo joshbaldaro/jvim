@@ -80,3 +80,10 @@ vim.keymap.set("n", "<leader>ga", ":Git add %<CR>", { desc = "Git add current fi
 
 vim.keymap.set("n", "<leader>gl", "<cmd>LazyGit<CR>", { desc = "LazyGit" })
 
+-- LSP Keybinds
+vim.keymap.set("n", "<leader>ld", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "<leader>lr", vim.lsp.buf.references, { desc = "Find references" })
+vim.keymap.set("n", "<leader>ln", vim.lsp.buf.hover, { desc = "Hover docs" })
+vim.keymap.set("n", "<leader>li", vim.lsp.buf.implementation, { desc = "Go to implementation" })
+vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc = "Code action" })
+vim.keymap.set("n", "<leader>lc", vim.lsp.buf.rename, { desc = "Change symbol" })

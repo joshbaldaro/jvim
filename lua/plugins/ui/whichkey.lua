@@ -1,5 +1,4 @@
 return {
-    
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts_extend = { "spec" },
@@ -12,10 +11,10 @@ return {
                 { '<leader>t', group = 'Terminal' },
                 { '<leader>g', group = 'Git' },
                 { '<leader>gh', group = 'Hunks' },
+                { '<leader>l', group = "LSP" },
             },
         },
     },
-    
     config = function(_, opts)
         local wk = require('which-key')
         wk.setup(opts)
