@@ -9,8 +9,9 @@ return {
         spec = {
             {
                 mode = { 'n', 'x' },
-                { '<leader>t', group = 'terminal' },
-                { '<leader>g', group = 'git' },
+                { '<leader>t', group = 'Terminal' },
+                { '<leader>g', group = 'Git' },
+                { '<leader>gh', group = 'Hunks' },
             },
         },
     },
