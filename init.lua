@@ -36,6 +36,7 @@ require('lazy').setup({
     require 'plugins.coding.lsp',
     require 'plugins.coding.mason',
     require 'plugins.coding.completions',
+    require 'plugins.coding.venv-selector',
 })
 
 require 'core.keymaps'
