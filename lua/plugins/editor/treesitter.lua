@@ -13,7 +13,7 @@ return {
         })
 
         local ensureInstalled = {
-            'lua', 'python', 'typescript',
+            'lua', 'python', 'swift', 'vim', 'json', 'dockerfile'
         }
         local alreadyInstalled = require('nvim-treesitter.config').get_installed()
         local parsersToInstall = vim.iter(ensureInstalled)
