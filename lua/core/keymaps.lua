@@ -94,3 +94,7 @@ vim.keymap.set("n", "<leader>fg", tele.live_grep, { desc = "Live Grep" })
 vim.keymap.set("n", "<leader>fb", tele.buffers, { desc = "Buffers" })
 vim.keymap.set("n", "<leader>fh", tele.help_tags, { desc = "Help Tags" })
 
+vim.keymap.set("n", "<leader>pu", "<cmd>PackageUI<CR>", { desc = "Open Package UI" })
+vim.keymap.set("n", "<leader>pl", function()
+    Snacks.terminal("python -m pip list; $SHELL")
+end, { desc = "Print Pip list" })
