@@ -12,6 +12,7 @@ return {
                 { '<leader>g', group = 'Git' },
                 { '<leader>gh', group = 'Hunks' },
                 { '<leader>l', group = "LSP" },
+                { '<leader>f', group = "Telescope"}
             },
         },
     },

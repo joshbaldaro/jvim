@@ -87,3 +87,10 @@ vim.keymap.set("n", "<leader>ln", vim.lsp.buf.hover, { desc = "Hover docs" })
 vim.keymap.set("n", "<leader>li", vim.lsp.buf.implementation, { desc = "Go to implementation" })
 vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, { desc = "Code action" })
 vim.keymap.set("n", "<leader>lc", vim.lsp.buf.rename, { desc = "Change symbol" })
+
+local tele = require('telescope.builtin')
+vim.keymap.set("n", "<leader>ff", tele.find_files, { desc = "Find Files" })
+vim.keymap.set("n", "<leader>fg", tele.live_grep, { desc = "Live Grep" })
+vim.keymap.set("n", "<leader>fb", tele.buffers, { desc = "Buffers" })
+vim.keymap.set("n", "<leader>fh", tele.help_tags, { desc = "Help Tags" })
+
