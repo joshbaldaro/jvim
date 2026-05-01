@@ -12,7 +12,12 @@ return {
                 { '<leader>g', group = 'Git' },
                 { '<leader>gh', group = 'Hunks' },
                 { '<leader>l', group = "LSP" },
-                { '<leader>f', group = "Telescope"}
+                { '<leader>f', group = "Telescope"},
+                { '<leader>v', group = "View" },
+                { '<leader>vb', group = "Buffers" },
+                { '<leader>vs', group = "Splits" },
+                { '<leader>p', group = "Packages" },
+                { '<leader>d', group = "Diagnostics" },
             },
         },
     },
