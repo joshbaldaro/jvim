@@ -102,3 +102,20 @@ vim.keymap.set("n", "<leader>pu", "<cmd>PackageUI<CR>", { desc = "Open Package U
 vim.keymap.set("n", "<leader>pl", function()
     Snacks.terminal("python -m pip list; $SHELL")
 end, { desc = "Print Pip list" })
+
+-- NOTE: Neotest Keybinds
+vim.keymap.set("n", "<leader>nr", function()
+    require('neotest').run.run()
+end, { desc = "Run Tests" })
+
+vim.keymap.set("n", "<leader>nf", function()
+    require('neotest').run.run(vim.fn.expand("%"))
+end, { desc = "Run Tests (File)" })
+
+vim.keymap.set("n", "<leader>no", function()
+    require('neotest').output.open({ enter = true })
+end, { desc = "Test Output" })
+
+vim.keymap.set("n", "<leader>ns", function()
+    require('neotest').summary.toggle()
+end, { desc = "Test Summary" })

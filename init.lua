@@ -31,6 +31,7 @@ require('lazy').setup({
     
     require 'plugins.editor.treesitter',
     require 'plugins.editor.todo',
+    require 'plugins.editor.neotest',
 
     require 'plugins.coding.mini-pairs',
     require 'plugins.coding.lsp',
