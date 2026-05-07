@@ -7,6 +7,33 @@ return {
       "MunifTanjim/nui.nvim",
       "nvim-tree/nvim-web-devicons",
     },
+    config = function()
+      require("neo-tree").setup({
+        filesystem = {
+            filtered_items = {
+                visible = false,
+                hide_dotfiles = false,
+                hide_gitignored = true,
+                
+                hide_by_name = {
+                    "__pycache__",
+                    ".DS_Store",
+                },
+                
+                hide_by_pattern = {
+                    "*.egg-info.*",
+                },
+
+                never_show = {
+                    ".git",
+                    ".venv",
+                    "venv",
+                    "__pycache__",
+                },
+            },
+        },
+      })
+    end,
   },
   {
     "antosha417/nvim-lsp-file-operations",
